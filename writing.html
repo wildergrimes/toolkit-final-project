@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My site HTML</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-content" id="wilder-grimes">
+        <h1 class="site-title">Wilder Grimes</h1>
+    </div>
+         <nav class="top-links">
+             <a href="writing.html">Writing</a>
+             <a href="art.html">Art</a>
+           </nav>
+     </div> 
+    
+    <div class="homepage-content">
+      <div class="logo-content">
+        <h1 class="page-title">Writing</h1>
+         </div>
+
+      <div class="writing-box">
+      <div class="article">  
+        <nav class="article-title">
+          <a href="https://www.newschoolfreepress.com/2023/10/24/chaos-lies-behind-maiko-kobayashis-kawaii-characters/">Chaos lies behind Maiko Kobayashi’s kawaii characters</a>
+        </nav>
+        <p class="article-para">
+        Viewers gathered around a corner in the back of a small NYC gallery as artist Maiko Kobayashi painted the words “Don’t escape the pain, face it” on a canvas, while Japanese pop played in the background. Then, in the span of just a few minutes, she smudged out the message in black-and-white paint and covered it with kawaii-anime-style creatures embracing...
+        </p>
+      </div>
+       <div class="article">
+        <nav class="article-title"> 
+            <a href="https://www.newschoolfreepress.com/2023/11/10/shakespeare-was-a-woman-and-other-heresies/">Shakespeare was a woman and other heresies</a>
+        </nav>
+          <p class="article-para">
+            Consider this unthinkable question: What if William Shakespeare was actually a woman?
+
+            This was among the questions discussed by journalist and author Elizabeth Winkler, Women’s Rights Lawyer Namita Luthra, and Wheaton College Philosophy Professor Nancy Kendrick in a panel discussion put together by Gina Walker of The New Historia...
+           </p>
+        </div>
+      <div class="article">
+      <nav class="article-title">
+        <a href="https://www.ourherald.com/articles/voices-of-home-erasing-stigma-behind-affordable-housing/">Voices of Home: Erasing Stigma Behind Affordable Housing</a>
+      </nav>
+      <p class="article-para">
+        Corinne Yonce, who created the Voices of Home project now hanging at Chandler Gallery, hopes her art can help “erase the stigma surrounding affordable housing communities and educate our friends and neighbors about the importance of a stable, reasonably priced home in helping people lead fulfilling lives...
+      </p>
+       </div>
+    </div>
+
+    <div class="footer-content">
+      <nav class="nav-container">
+        <a href="about.html">About</a>
+      </nav>
+      <nav id="myBtn" class="nav-container">
+        Contact
+      </nav>
+    </div>
+    </div>
+    <div id="myModal" class="contact-pop-up">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="name">Wilder Grimes</h2>
+  
+      <div class="contact-info">
+        <h3 class="email">wildergrimes04@gmail.com</h3>
+        <h4 class="phone">(802)839-9274</h4>
+        <h5 class="instagram">@wilddd.33</h5>
+      </div>
+  
+      <div class="modal-content">
+    </div>
+</body>
+<style>
+  @font-face {
+    font-family: pinyon;
+    src: url(fonts/Pinyon_Script/PinyonScript-Regular.ttf);
+  }
+  @font-face {
+    font-family: compagnon;
+    src: url(fonts/Compagnon-Roman.otf);
+  }
+  .header-container{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    top: 0px;
+  background-color: white;
+  }
+#wilder-grimes {
+  /* position: fixed; */
+  /* left: 1%;
+  top: 1%; */
+  font-family: pinyon;
+  color: #59114d;
+}
+.top-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+    color: #998888;
+}
+.writing-box{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+.logo-content{
+  height: 150px;
+}
+.homepage-content{
+  height: auto;
+    width: 100%;
+    position: static;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+}
+.article{
+  width: 25%;
+  display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+.article-para{
+  font-family: compagnon;
+  color: #998888;
+}
+.article-title{
+  font-family: compagnon;
+  color: #59114d;
+  font-size: large;
+}
+.footer-content{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: compagnon;
+  align-items: center;
+  bottom: 0px;
+    background-color: white;
+}
+.nav-container{
+  width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.page-title{
+  font-family: pinyon;
+  display: flex;
+  flex-direction: row;
+  justify-content:  center;
+  color: #59114d;
+  font-size: 75px;
+}
+#myModal{
+    position: fixed;
+    top:30%;
+    left: 37%;
+    display: none;
+  }
+
+  .contact-pop-up {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #998888;
+    background-color: white;
+    
+  }
+
+  .name {
+    font-family: pinyon;
+    color: #59114D;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .contact-info {
+    font-family: compagnon;
+    color: #998888;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+@media (max-width: 800px){
+  .writing-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;}
+  .article{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 700px){
+  .top-links{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+  }
+  .nav-container{
+  width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+}
+</style>
+</html>

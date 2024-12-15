@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My site HTML</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+   <div class="header-container">
+        <div class="logo-content" id="wilder-grimes">
+            <h1 class="site-title">Wilder Grimes</h1>
+        </div>
+        <nav class="top-links">
+            <a href="writing.html">Writing</a>
+            <a href="art.html">Art</a>
+          </nav>
+    </div>
+
+    <div class="homepage-content">
+        <div class="image-box">
+            <img class="image" src="images/IMG_5714 2.jpeg" alt="main image" />
+          </div>
+    </div>
+
+    <div class="footer-content">
+      <nav class="nav-container">
+        <a href="about.html">About</a>
+      </nav>
+      <nav id="myBtn" class="nav-container">
+        Contact
+      </nav>
+    </div>
+    <div id="myModal" class="contact-pop-up">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="name">Wilder Grimes</h2>
+  
+      <div class="contact-info">
+        <h3 class="email">wildergrimes04@gmail.com</h3>
+        <h4 class="phone">(802)839-9274</h4>
+        <h5 class="instagram">@wilddd.33</h5>
+      </div>
+  
+      <div class="modal-content">
+    </div>
+    <div id="myModal2" class="welcome-pop-up">
+      <div class="modal2-content">
+      <span class="close">&times;</span>
+      <h2 class="name">Welcome</h2>
+  
+      <div class="modal-content">
+    </div>
+ </body>
+ <style>
+  @font-face {
+    font-family: pinyon;
+    src: url('fonts/Pinyon_Script/PinyonScript-Regular.ttf');
+  }
+  @font-face {
+    font-family: compagnon;
+    src: url(fonts/Compagnon-Roman.otf);
+  }
+  .header-container{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    top: 0px;
+    background-color: white;
+  }
+#wilder-grimes {
+  font-family: pinyon;
+  color: #59114D;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.top-links {
+  /* position: fixed; */
+  /* right: 5%; 
+  top: 5%;    */
+    height: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+}
+.image-box{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.image{
+  width: 100%;
+}
+.footer-content{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: compagnon;
+  align-items: center;
+  bottom: 0px;
+    background-color: white;
+}
+.homepage-content{
+  height: auto;
+  width: 100%;
+}
+.nav-container {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #myModal{
+    position: fixed;
+    top:30%;
+    left: 37%;
+    display: none;
+  }
+
+  .contact-pop-up {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #998888;
+    background-color: white;
+    
+  }
+
+  .name {
+    font-family: pinyon;
+    color: #59114D;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .contact-info {
+    font-family: compagnon;
+    color: #998888;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #myModal2{
+    position: fixed;
+    top:30%;
+    left: 37%;
+    display: block;
+  }
+  @media (max-width: 800px){
+  .art-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;}
+  .art{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  .contact-pop-up {
+    width: 300px;
+    height: 250px;
+    border: 1px solid #998888;
+    background-color: white;
+    
+  }
+  #myModal{
+    position: fixed;
+    top:30%;
+    left: 25%;
+    display: none;  
+  }
+  @media (max-width: 700px){
+  .top-links{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+  }
+  .nav-container{
+  width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.welcome-pop-up{
+  width: 250px;
+  height: 150px;
+}
+.pop-up{
+  font-size: 30px;
+}
+#wilder-grimes {
+  font-family: pinyon;
+  color: #59114D;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+}
+/* @media (max-width: 800px) (min-width: 400px){
+  #wilder-grimes {
+  font-family: pinyon;
+  color: #59114D;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  }
+} */
+  </style>
+
+
+  <script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

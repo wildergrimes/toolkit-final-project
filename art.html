@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My site HTML</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="logo-content" id="wilder-grimes">
+      <h1 class="site-title">Wilder Grimes</h1>
+    </div>
+    <nav class="top-links">
+      <a href="writing.html">Writing</a>
+      <a href="art.html">Art</a>
+    </nav>
+  </div>
+  <div class="homepage-content">
+    <div class="logo-content" id="page-title">
+      <h1 class="page-title">Art</h1>
+    </div>
+
+    <div class="art-box">
+    <div class="art">
+      <div class="image-box">
+        <img class="image" src="images/IMG_5692 (1).jpeg" alt="Photo 1" />
+      </div>
+      <p class="painting-para">
+        Jamie, 2024
+      </p>
+    </div>
+
+    <div class="art">
+      <div class="image-box">
+        <img class="image" src="images/IMG_5036.jpeg" alt="Photo 2" />
+      </div>
+      <p class="painting-para">
+        Still life, 2024
+      </p>
+    </div>
+
+    <div class="art">
+      <div class="image-box">
+        <img class="image" src="images/IMG_4834.jpeg" alt="Photo 3" />
+      </div>
+      <p class="painting-para">
+       Cherry Keys, 2024
+      </p>
+    </div>
+  </div>
+  </div>
+  <div class="footer-content">
+    <nav class="nav-container">
+      <a href="about.html">About</a>
+    </nav>
+    <nav id="myBtn" class="nav-container">
+      Contact
+    </nav>
+  </div>
+  </div>
+  <div id="myModal" class="contact-pop-up">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="name">Wilder Grimes</h2>
+
+    <div class="contact-info">
+      <h3 class="email">wildergrimes04@gmail.com</h3>
+      <h4 class="phone">(802)839-9274</h4>
+      <h5 class="instagram">@wilddd.33</h5>
+    </div>
+
+    <div class="modal-content">
+  </div>
+
+
+
+
+</body>
+<style>
+
+
+.close{
+  text-align: right;
+  
+}
+.close:hover{
+  cursor:pointer;
+}
+  @font-face {
+    font-family: pinyon;
+    src: url(fonts/Pinyon_Script/PinyonScript-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: compagnon;
+    src: url(fonts/Compagnon-Roman.otf);
+  }
+
+  .header-container {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    top: 0px;
+    background-color: white;
+  }
+
+  .art {
+    width: 30%;
+  }
+
+  #wilder-grimes {
+    font-family: pinyon;
+    color: #59114D;
+  }
+
+  .top-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+    color: #998888;
+  }
+
+  .art-box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .homepage-content {
+    height: auto;
+    width: 100%;
+    position: static;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .logo-content {
+    height: 150px;
+  }
+
+  .footer-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: compagnon;
+    align-items: center;
+    bottom: 0px;
+    background-color: white;
+  }
+
+  .page-title {
+    font-family: pinyon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #59114D;
+    font-size: 75px;
+  }
+
+  .painting-para {
+    font-family: compagnon;
+    color: #998888;
+  }
+  .image-box{
+    width: 100%;
+    /* height: 200px; */
+  }
+
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nav-container {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #myModal{
+    position: fixed;
+    top:30%;
+    left: 37%;
+    display: none;
+  }
+
+  .contact-pop-up {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #998888;
+    background-color: white;
+    
+  }
+
+  .name {
+    font-family: pinyon;
+    color: #59114D;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .contact-info {
+    font-family: compagnon;
+    color: #998888;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 800px){
+  .art-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;}
+  .art{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  .contact-pop-up {
+    width: 300px;
+    height: 250px;
+    border: 1px solid #998888;
+    background-color: white;
+    
+  }
+  #myModal{
+    position: fixed;
+    top:30%;
+    left: 25%;
+    display: none;  
+  }
+}
+@media (max-width: 700px){
+  .top-links{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-family: compagnon;
+  }
+  .nav-container{
+  width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+}
+@media (max-width: 450px){
+  #myModal{
+    position: fixed;
+    top:30%;
+    left: 10%;
+    display: none;  
+  }
+}
+</style>
+
+<script>
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+</html>
